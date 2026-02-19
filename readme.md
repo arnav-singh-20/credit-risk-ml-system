@@ -190,8 +190,8 @@ credit-risk-ml-system/
 │ ├── evaluate.py
 │ └── predict.py
 │
-├── data/
-├── models/
+├── Data/
+├── Model/
 ├── reports/
 ├── requirements.txt
 └── README.md
@@ -215,26 +215,26 @@ python src/predict.py
 
 🧩 Engineering Insights
 
-This project emphasizes how ML behaves in production systems:
-Model performance must align with business cost.
-Feature pipelines are mandatory for reproducibility.
-Threshold tuning separates prediction from decision-making.
-Stability often matters more than raw accuracy.
+- This project emphasizes how ML behaves in production systems:
+- Model performance must align with business cost.
+- Feature pipelines are mandatory for reproducibility.
+- Threshold tuning separates prediction from decision-making.
+- Stability often matters more than raw accuracy.
 
 🚧 Future Improvements
-Gradient Boosting / XGBoost comparison
-Probability calibration
-Data drift monitoring
-FastAPI inference API
-Automated retraining workflow
+- Gradient Boosting / XGBoost comparison
+- Probability calibration
+- Data drift monitoring
+- FastAPI inference API
+- Automated retraining workflow
 
 👨‍💻 Author
-Arnav Singh
-Aspiring ML Engineer focused on:
-Machine Learning Systems
-MLOps
-Production-ready AI
-Applied ML Engineering
+- *Arnav Singh*
+- Aspiring ML Engineer focused on:
+- Machine Learning Systems
+- MLOps
+- Production-ready AI
+- Applied ML Engineering
 
 ⭐ If you found this project interesting, consider starring the repository!
 
