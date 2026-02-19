@@ -182,19 +182,25 @@ Model and business logic are intentionally separated.
 
 ## 📂 Project Structure
 
-credit-risk-ml-system
+credit-risk-ml-system/
 │
-├── src
-│ ├── preprocess.py
-│ ├── train.py
-│ ├── evaluate.py
-│ └── predict.py
+├── Data/ # Raw dataset
+├── Model/ # Saved model artifacts
+│ ├── credit_risk_model.pkl
+│ └── model_config.pkl
 │
-├── Data
-├── Model
-├── reports
+├── reports/
+│ └── final_report.md
+│
+├── src/
+│ ├── preprocess.py # Data preprocessing pipeline
+│ ├── train.py # Model training
+│ ├── evaluate.py # Model evaluation
+│ └── predict.py # Inference script
+│
 ├── requirements.txt
-└── readme.md
+├── .gitignore
+└── README.md
 
 ---
 
