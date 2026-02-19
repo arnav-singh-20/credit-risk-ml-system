@@ -172,7 +172,7 @@ Primary metrics used:
 
 Saved artifacts:
 
-models/
+Model
 ├── credit_risk_model.pkl → preprocessing + model pipeline
 └── model_config.pkl → decision threshold
 
@@ -182,19 +182,19 @@ Model and business logic are intentionally separated.
 
 ## 📂 Project Structure
 
-credit-risk-ml-system/
+credit-risk-ml-system
 │
-├── src/
+├── src
 │ ├── preprocess.py
 │ ├── train.py
 │ ├── evaluate.py
 │ └── predict.py
 │
-├── Data/
-├── Model/
-├── reports/
+├── Data
+├── Model
+├── reports
 ├── requirements.txt
-└── README.md
+└── readme.md
 
 ---
 
