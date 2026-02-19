@@ -154,8 +154,7 @@ Benefits:
 - separate ML from operational policy
 
 ---
-credit-risk-ml-system
-/.gitignore
+
 ## 📈 Evaluation Metrics
 
 Accuracy alone is misleading for credit risk.
