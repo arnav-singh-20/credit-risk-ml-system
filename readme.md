@@ -154,7 +154,8 @@ Benefits:
 - separate ML from operational policy
 
 ---
-
+credit-risk-ml-system
+/.gitignore
 ## 📈 Evaluation Metrics
 
 Accuracy alone is misleading for credit risk.
@@ -178,46 +179,13 @@ Model
 
 Model and business logic are intentionally separated.
 
----
-
-## 📂 Project Structure
-
-credit-risk-ml-system/
-│
-├── Data/ # Raw dataset
-├── Model/ # Saved model artifacts
-│ ├── credit_risk_model.pkl
-│ └── model_config.pkl
-│
-├── reports/
-│ └── final_report.md
-│
-├── src/
-│ ├── preprocess.py # Data preprocessing pipeline
-│ ├── train.py # Model training
-│ ├── evaluate.py # Model evaluation
-│ └── predict.py # Inference script
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
-
----
 
 ## ▶️ How to Run Locally
 
 Install dependencies:
-bash
-pip install -r requirements.txt
-
-Train model:
-python src/train.py
-
-Evaluate model:
-python src/evaluate.py
-
-Run prediction:
-python src/predict.py
+Train model
+Evaluate model
+Run prediction
 
 🧩 Engineering Insights
 
