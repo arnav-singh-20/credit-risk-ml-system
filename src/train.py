@@ -11,8 +11,8 @@ from preprocess import build_preprocessor
 # Load dataset
 df = pd.read_csv("data/GermanCredit.csv")
 
-X = df.drop("Risk", axis=1)
-y = df["Risk"].map({"Good": 0, "Bad": 1})
+X = df.drop("credit_risk", axis=1)
+y = df["credit_risk"]
 
 # Train-test split
 X_train, X_test, y_train, y_test = train_test_split(
@@ -50,10 +50,12 @@ grid.fit(X_train, y_train)
 best_model = grid.best_estimator_
 
 # Save trained model
-joblib.dump(best_model, "models/credit_risk_model.pkl")
+joblib.dump(best_model, "/Users/arnavsingh/Downloads/credit-risk-ml-system/models/credit_risk_model.joblib")
+
 
 # Save threshold config
-config = {"threshold": 0.35}
-joblib.dump(config, "models/model_config.pkl")
+joblib.dump({"threshold": 0.35},
+            "/Users/arnavsingh/Downloads/credit-risk-ml-system/models/model_config.joblib")
+
 
 print("Training completed and model saved.")

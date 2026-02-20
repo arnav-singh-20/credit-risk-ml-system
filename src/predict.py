@@ -1,20 +1,18 @@
 import pandas as pd
-import joblib
 
-# Load model + config
-model = joblib.load("models/credit_risk_model.pkl")
-config = joblib.load("models/model_config.pkl")
 
-threshold = config["threshold"]
+def predict(input_data: dict, model):
 
-# Example prediction
-sample = pd.read_csv("data/GermanCredit.csv") \
-            .drop("Risk", axis=1) \
-            .iloc[[0]]
+    # Convert input JSON → DataFrame
+    df = pd.DataFrame([input_data])
 
-probability = model.predict_proba(sample)[:, 1][0]
+    # Prediction
+    prediction = model.predict(df)[0]
+    probability = model.predict_proba(df)[0][1]
 
-prediction = int(probability >= threshold)
+    result = {
+        "prediction": int(prediction),
+        "risk_probability": float(probability)
+    }
 
-print("Risk Probability:", round(probability, 3))
-print("Decision:", "Bad Risk" if prediction else "Good Risk")
+    return result
